@@ -59,11 +59,77 @@
 
 /* MOBILE */
 .btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-
   display: none;
+  width: 3.6rem;
+  height: 3em;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-mobile-nav span {
+  display: block;
+  position: absolute;
+  height: 0.4rem;
+  width: 100%;
+  background: #555;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-mobile-nav span:nth-child(1) {
+  top: 0;
+}
+
+.btn-mobile-nav span:nth-child(2),
+.btn-mobile-nav span:nth-child(3) {
+  top: 1rem;
+}
+
+.btn-mobile-nav span:nth-child(4) {
+  top: 2rem;
+}
+
+.nav-open .btn-mobile-nav span:nth-child(1) {
+  top: 1.8rem;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-open .btn-mobile-nav span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-open .btn-mobile-nav span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-open .btn-mobile-nav span:nth-child(4) {
+  top: 1.8rem;
+  width: 0%;
+  left: 50%;
 }
 
 .icon-mobile-nav {
@@ -85,7 +151,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }

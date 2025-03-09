@@ -52,7 +52,6 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%; /* font-size: 10px */
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -94,10 +93,6 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
-/* .grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-} */
 
 .grid--center-v {
   align-items: center;
@@ -232,8 +227,6 @@ body {
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted var(--primary-color);
-  outline-offset: 8px; */
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 

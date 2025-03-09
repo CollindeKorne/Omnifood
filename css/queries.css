@@ -140,9 +140,6 @@ Instead, 1rem = 1em = 16px */
     justify-content: center;
     transition: all 0.5s ease-in;
 
-    /* HIDE NAV */
-    /* allows no transitions-> display: none*/
-
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
